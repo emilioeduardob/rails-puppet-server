@@ -3,6 +3,7 @@ Exec {
 }
 include vim
 include rvm
+include apache2
 
 package {
   "htop":
@@ -13,7 +14,7 @@ rvm_system_ruby {
   'ruby-1.9.3-p286':
     ensure => 'present',
     default_use => true;
-  'ruby-1.8.7-p357':
+  'ruby-1.8.7-p371':
     ensure => 'present',
     default_use => false;
 }
